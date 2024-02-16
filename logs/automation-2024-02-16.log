@@ -1,0 +1,51 @@
+14:28:57.154 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+14:28:57.169 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+14:28:57.172 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+14:28:57.173 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+14:28:57.176 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+14:28:57.177 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+14:28:57.178 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+14:28:57.179 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+14:28:57.182 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+14:28:57.182 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+14:28:58.950 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:28:58.952 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:28:58.997 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+14:28:59.000 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+14:28:59.003 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+14:28:59.004 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+14:28:59.008 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+14:28:59.009 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+14:28:59.010 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+14:28:59.012 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+14:28:59.016 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+14:28:59.017 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+14:29:00.814 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+14:29:00.816 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+14:29:00.855 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
+14:29:00.860 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
+14:29:00.863 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
+14:29:00.864 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
+14:29:00.866 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
+14:29:00.867 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
+14:29:00.867 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
+14:29:00.868 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
+14:29:00.871 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
+14:29:00.872 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet2.xml'
+14:29:47.561 [main] INFO  testCases.TC_002_Surgeries - Starting TC_002_Surgeries
+14:29:47.562 [main] INFO  testCases.TC_002_Surgeries - getting surgeries
+14:29:52.105 [main] DEBUG testCases.TC_002_Surgeries - taking screenshot
+14:29:52.565 [main] INFO  testCases.TC_002_Surgeries - opening surgeries
+14:29:53.562 [main] INFO  testCases.TC_002_Surgeries - recording general surgeries
+14:29:53.919 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+14:29:55.000 [main] INFO  testCases.TC_002_Surgeries - recording orthopedic surgeries
+14:29:55.230 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+14:29:56.089 [main] INFO  testCases.TC_002_Surgeries - recording practology surgeries
+14:29:56.413 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+14:29:57.440 [main] INFO  testCases.TC_002_Surgeries - recording opthomology surgeries
+14:29:57.676 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+14:29:58.401 [main] INFO  testCases.TC_002_Surgeries - recording urology surgeries
+14:29:58.650 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+14:30:00.088 [main] INFO  testCases.TC_002_Surgeries - recording cosmetic surgeries
+14:30:00.364 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+14:30:48.096 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - Staring TC_003_CorporateWellness_InvalidDetails

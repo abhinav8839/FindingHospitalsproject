@@ -1,0 +1,7 @@
+14:30:48.097 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - opening booking page
+14:30:55.131 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - putting in invalid details
+14:30:56.049 [main] DEBUG testCases.TC_003_CorporateWellness_InvalidDetails - checking if button is enabled
+14:31:39.370 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - Staring TC_003_CorporateWellness_ValidDetails
+14:31:50.899 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - opening booking page
+14:31:52.219 [main] DEBUG testCases.TC_003_CorporateWellness_ValidDetails - checking if button is enabled
+14:31:57.418 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - checking if thank you modal is working or not
