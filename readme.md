@@ -32,7 +32,3 @@ Framework
 ----------
 - Maven <4.0.0>
 
-
-Author
--------
-Subhodeep Chakraborty(2303507)

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\2303507\eclipse-workspace\FindingHospitalsHackathonProject 1\FindingHospitalsHackathonProject\master.xml</span>
+                    <span>C:\Users\2320204\Downloads\2303621_FindingHospitalsHackathonProject 2\FindingHospitalsHackathonProject\master.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,   11 passed</span>
+                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_001_SearchingDentists" class="method navigator-link" hash-for-method="gettingDentists">gettingDentists</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_003_CorporateWellness_ValidDetails" class="method navigator-link" hash-for-method="openingCorporateWellness">openingCorporateWellness</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +122,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC_003_CorporateWellness_InvalidDetails" class="method navigator-link" hash-for-method="checkingInvalidDetails">checkingInvalidDetails</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC_003_CorporateWellness_InvalidDetails" class="method navigator-link" hash-for-method="checkingInvalidDetails1">checkingInvalidDetails1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -114,16 +133,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.TC_002_Surgeries" class="method navigator-link" hash-for-method="generalSurgeries">generalSurgeries</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC_001_SearchingDentists" class="method navigator-link" hash-for-method="gettingDentists">gettingDentists</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC_003_CorporateWellness_ValidDetails" class="method navigator-link" hash-for-method="openingCorporateWellness">openingCorporateWellness</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -168,6 +177,87 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC_001_SearchingDentists</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="gettingDentists">
+                  </a> <!-- gettingDentists -->
+                  <span class="method-name">gettingDentists</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=120.0.6099.130)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [11015a7857d21a47cb0b338943efe888, clickElement {id=743C96968018B0D31E7F822D5A6EC851_element_95}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49261}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49261/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (11015a7857d21a47cb0b338943efe888)] -&gt; xpath: //*[@id=&quot;container&quot;]/div/div[3]/div/div/header/div[2]/div/div[3]/div/label[3]/span/span]
+Session ID: 11015a7857d21a47cb0b338943efe888
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.click(Unknown Source)
+	at testCases.TC_001_SearchingDentists.gettingDentists(TC_001_SearchingDentists.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC_003_CorporateWellness_ValidDetails</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openingCorporateWellness">
+                  </a> <!-- openingCorporateWellness -->
+                  <span class="method-name">openingCorporateWellness</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.130)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ce29d9b4fd780befff9acaa03e9cc0e, findElement {value=//header[@id=&apos;header&apos;]//button[@type=&apos;submit&apos;][normalize-space()=&apos;Schedule a demo&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49827}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49827/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ce29d9b4fd780befff9acaa03e9cc0e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.isEnabled(Unknown Source)
+	at testCases.TC_003_CorporateWellness_ValidDetails.openingCorporateWellness(TC_003_CorporateWellness_ValidDetails.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -176,9 +266,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkingInvalidDetails">
-                  </a> <!-- checkingInvalidDetails -->
-                  <span class="method-name">checkingInvalidDetails</span>
+                  <a name="checkingInvalidDetails1">
+                  </a> <!-- checkingInvalidDetails1 -->
+                  <span class="method-name">checkingInvalidDetails1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,31 +281,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="gettingDentists">
-                  </a> <!-- gettingDentists -->
-                  <span class="method-name">gettingDentists</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="searchingDentists">
                   </a> <!-- searchingDentists -->
                   <span class="method-name">searchingDentists</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.TC_003_CorporateWellness_ValidDetails</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="openingCorporateWellness">
-                  </a> <!-- openingCorporateWellness -->
-                  <span class="method-name">openingCorporateWellness</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -280,7 +348,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\2303507\eclipse-workspace\FindingHospitalsHackathonProject 1\FindingHospitalsHackathonProject\master.xml</span>
+            <span class="header-content">C:\Users\2320204\Downloads\2303621_FindingHospitalsHackathonProject 2\FindingHospitalsHackathonProject\master.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -341,47 +409,47 @@ data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'gettingDentists')
 data.setCell(0, 2, 'testCases.TC_001_SearchingDentists')
-data.setCell(0, 3, 33993);
+data.setCell(0, 3, 44073);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'openingCorporateWellness')
-data.setCell(1, 2, 'testCases.TC_003_CorporateWellness_ValidDetails')
-data.setCell(1, 3, 18372);
+data.setCell(1, 1, 'searchingDentists')
+data.setCell(1, 2, 'testCases.TC_001_SearchingDentists')
+data.setCell(1, 3, 10217);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'checkingInvalidDetails')
-data.setCell(2, 2, 'testCases.TC_003_CorporateWellness_InvalidDetails')
-data.setCell(2, 3, 10338);
+data.setCell(2, 1, 'openingCorporateWellness')
+data.setCell(2, 2, 'testCases.TC_003_CorporateWellness_ValidDetails')
+data.setCell(2, 3, 7770);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'searchingDentists')
-data.setCell(3, 2, 'testCases.TC_001_SearchingDentists')
-data.setCell(3, 3, 7102);
+data.setCell(3, 1, 'checkingInvalidDetails1')
+data.setCell(3, 2, 'testCases.TC_003_CorporateWellness_InvalidDetails')
+data.setCell(3, 3, 6602);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'topSurgeries')
 data.setCell(4, 2, 'testCases.TC_002_Surgeries')
-data.setCell(4, 3, 5679);
+data.setCell(4, 3, 4324);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'urologySurgeries')
+data.setCell(5, 1, 'generalSurgeries')
 data.setCell(5, 2, 'testCases.TC_002_Surgeries')
-data.setCell(5, 3, 1184);
+data.setCell(5, 3, 1707);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'generalSurgeries')
+data.setCell(6, 1, 'urologySurgeries')
 data.setCell(6, 2, 'testCases.TC_002_Surgeries')
-data.setCell(6, 3, 1052);
+data.setCell(6, 3, 1535);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'cosmeticSurgeries')
+data.setCell(7, 1, 'orthopedicSurgeries')
 data.setCell(7, 2, 'testCases.TC_002_Surgeries')
-data.setCell(7, 3, 868);
+data.setCell(7, 3, 1390);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'practologySurgeries')
+data.setCell(8, 1, 'cosmeticSurgeries')
 data.setCell(8, 2, 'testCases.TC_002_Surgeries')
-data.setCell(8, 3, 856);
+data.setCell(8, 3, 1232);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'orthopedicSurgeries')
+data.setCell(9, 1, 'ophtomologySurgeries')
 data.setCell(9, 2, 'testCases.TC_002_Surgeries')
-data.setCell(9, 3, 726);
+data.setCell(9, 3, 1122);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'ophtomologySurgeries')
+data.setCell(10, 1, 'practologySurgeries')
 data.setCell(10, 2, 'testCases.TC_002_Surgeries')
-data.setCell(10, 3, 579);
+data.setCell(10, 3, 1091);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -419,84 +487,88 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">searchingDentists</span>
-                <span class="method-start">47600 ms</span>
+                <span class="method-start">11329 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">gettingDentists</span>
-                <span class="method-start">55100 ms</span>
+                <span class="method-start">21852 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">89489 ms</span>
+                <span class="method-start">66118 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC_002_Surgeries</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome, Windows)</span>
-                <span class="method-start">90917 ms</span>
+                <span class="method-start">67418 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">topSurgeries</span>
-                <span class="method-start">135777 ms</span>
+                <span class="method-start">75987 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">generalSurgeries</span>
-                <span class="method-start">141778 ms</span>
+                <span class="method-start">80750 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">orthopedicSurgeries</span>
-                <span class="method-start">143215 ms</span>
+                <span class="method-start">83286 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">practologySurgeries</span>
-                <span class="method-start">144305 ms</span>
+                <span class="method-start">85342 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ophtomologySurgeries</span>
-                <span class="method-start">145655 ms</span>
+                <span class="method-start">87155 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">urologySurgeries</span>
-                <span class="method-start">146617 ms</span>
+                <span class="method-start">89088 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">cosmeticSurgeries</span>
-                <span class="method-start">148304 ms</span>
+                <span class="method-start">91481 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">149569 ms</span>
+                <span class="method-start">93505 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC_003_CorporateWellness_InvalidDetails</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome, Windows)</span>
-                <span class="method-start">150892 ms</span>
+                <span class="method-start">94868 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">checkingInvalidDetails</span>
-                <span class="method-start">196312 ms</span>
+                <span class="method-name">checkingInvalidDetails1</span>
+                <span class="method-start">105651 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">207145 ms</span>
+                <span class="method-start">112761 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC_003_CorporateWellness_ValidDetails</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(chrome, Windows)</span>
-                <span class="method-start">208571 ms</span>
+                <span class="method-start">114003 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">openingCorporateWellness</span>
-                <span class="method-start">247586 ms</span>
+                <span class="method-start">123679 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">266189 ms</span>
+                <span class="method-start">131469 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -33,13 +33,14 @@ public class TC_003_CorporateWellness_ValidDetails extends BaseClass {
 		Select select2 = new Select(driver.findElement(By.xpath("//header[@id='header']//select[@id='interestedIn']")));
 		select2.selectByVisibleText("Taking a demo");
 		logger.debug("checking if button is enabled");
+		takeSnapshot(driver, "Valid details");
 		if (cw.getScheduleButton().isEnabled()) {
 			System.out.println("Schedule button is enabled!");
 		}
 		cw.getScheduleButton().click();
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		logger.info("checking if thank you modal is working or not");
-		takeSnapshot(driver, "Valid details");
+		//takeSnapshot(driver, "Valid details");
 		String heading = cw.getThankYou();
 		String paragraph = cw.getThankYouParagraph();
 		System.out.println(heading);

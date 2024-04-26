@@ -1,7 +1,15 @@
-14:30:48.097 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - opening booking page
-14:30:55.131 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - putting in invalid details
-14:30:56.049 [main] DEBUG testCases.TC_003_CorporateWellness_InvalidDetails - checking if button is enabled
-14:31:39.370 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - Staring TC_003_CorporateWellness_ValidDetails
-14:31:50.899 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - opening booking page
-14:31:52.219 [main] DEBUG testCases.TC_003_CorporateWellness_ValidDetails - checking if button is enabled
-14:31:57.418 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - checking if thank you modal is working or not
+16:09:41.107 [main] INFO  testCases.TC_002_Surgeries - recording practology surgeries
+16:09:41.593 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+16:09:42.920 [main] INFO  testCases.TC_002_Surgeries - recording opthomology surgeries
+16:09:43.322 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+16:09:44.856 [main] INFO  testCases.TC_002_Surgeries - recording urology surgeries
+16:09:45.280 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+16:09:47.246 [main] INFO  testCases.TC_002_Surgeries - recording cosmetic surgeries
+16:09:47.739 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+16:10:01.414 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - Staring TC_003_CorporateWellness_InvalidDetails
+16:10:01.415 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - opening booking page
+16:10:05.097 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - putting in invalid details
+16:10:06.367 [main] DEBUG testCases.TC_003_CorporateWellness_InvalidDetails - checking if button is enabled
+16:10:19.443 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - Staring TC_003_CorporateWellness_ValidDetails
+16:10:23.561 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - opening booking page
+16:10:26.353 [main] DEBUG testCases.TC_003_CorporateWellness_ValidDetails - checking if button is enabled

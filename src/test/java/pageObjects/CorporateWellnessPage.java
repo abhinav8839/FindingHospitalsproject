@@ -40,7 +40,7 @@ public class CorporateWellnessPage extends BasePage {
 	}
 
 	public void setContactNumber() {
-		contactNumber.sendKeys("9876543210");
+		contactNumber.sendKeys("9503289768");
 	}
 
 	public WebElement setEmail() {

@@ -16,6 +16,13 @@
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.TC_001_SearchingDentists -->
+      <class name="testCases.TC_003_CorporateWellness_ValidDetails">
+        <methods>
+          <include name="openingCorporateWellness"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC_003_CorporateWellness_ValidDetails -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

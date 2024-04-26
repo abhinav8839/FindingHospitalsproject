@@ -28,24 +28,25 @@ public class ExtentReportManager implements ITestListener {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 
 		repName = "Test-Report-" + timeStamp + ".html";
-		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);
+		//sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);
+		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir")+".\\reports\\myTestNGreport.html");
 		
 		sparkReporter.config().setDocumentTitle("Practo.com Test Report");
 		sparkReporter.config().setReportName("Functional Testing");
-		sparkReporter.config().setTheme(Theme.DARK);
+		sparkReporter.config().setTheme(Theme.STANDARD);
 		
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
 		extent.setSystemInfo("Application", "Practo");
 		extent.setSystemInfo("Module", "Admin");
-		extent.setSystemInfo("User Name", "Tejas Angadi - "+System.getProperty("user.name"));
+		extent.setSystemInfo("User Name", "xyz - "+System.getProperty("user.name"));
 		extent.setSystemInfo("Environment", "QA");
 		
 		String browser = context.getCurrentXmlTest().getParameter("browser");
 		extent.setSystemInfo("Browser", browser.toString());
 		
 		List<String> includedGroups = context.getCurrentXmlTest().getIncludedGroups();
-		if(!includedGroups.isEmpty()) {
+		if(!includedGroups.isEmpty()){
 			extent.setSystemInfo("Groups", includedGroups.toString());
 		}
 		
@@ -55,11 +56,11 @@ public class ExtentReportManager implements ITestListener {
 		test = extent.createTest(result.getTestClass().getName());
 		test.assignCategory(result.getMethod().getGroups());
 		test.log(Status.PASS, result.getName() + " got successfully executed");
-		try {
+		try{
 			String imagePath = BaseClass.captureScreen(result.getName());
 			test.addScreenCaptureFromPath(imagePath);
 		}
-		catch(Exception e) {
+		catch(Exception e){
 			e.printStackTrace();
 		}
 	}
@@ -69,11 +70,11 @@ public class ExtentReportManager implements ITestListener {
 		test.assignCategory(result.getMethod().getGroups());
 		test.log(Status.FAIL, result.getName()+" got failed");
 		test.log(Status.INFO, result.getThrowable().getMessage());
-		try {
+		try{
 			String imagePath = BaseClass.captureScreen(result.getName());
 			test.addScreenCaptureFromPath(imagePath);
 		}
-		catch(Exception e) {
+		catch(Exception e){
 			e.printStackTrace();
 		}
 	}
@@ -86,16 +87,16 @@ public class ExtentReportManager implements ITestListener {
 		test.log(Status.INFO, result.getThrowable().getMessage());
 	}
 	
-	public void onFinish(ITestContext context) {
+	public void onFinish(ITestContext context){
 		extent.flush();
 		
 		String pathOfExtentReport = System.getProperty("user.dir")+"\\reports\\"+repName;
 		File extentReport = new File(pathOfExtentReport);
 		
-		try {
+		try{
 			Desktop.getDesktop().browse(extentReport.toURI());
 		}
-		catch(Exception e) {
+		catch(Exception e){
 			e.printStackTrace();
 		}
 	}

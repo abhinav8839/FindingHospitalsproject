@@ -13,7 +13,7 @@ import java.io.IOException;
 public class TC_003_CorporateWellness_InvalidDetails extends BaseClass {
 
 	@Test(priority = 1)
-	public void checkingInvalidDetails() throws IOException, InterruptedException {
+	public void checkingInvalidDetails1() throws IOException, InterruptedException {
 		logger.info("Staring TC_003_CorporateWellness_InvalidDetails");
 		HomePage hp = new HomePage(driver);
 		logger.info("opening booking page");
@@ -43,4 +43,6 @@ public class TC_003_CorporateWellness_InvalidDetails extends BaseClass {
 		select2.selectByVisibleText("Taking a demo");
 		cw.getScheduleButton();
 	}
+	
+	
 }

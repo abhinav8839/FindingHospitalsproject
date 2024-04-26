@@ -1,0 +1,53 @@
+16:52:54.325 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - opening booking page
+16:53:31.502 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - putting in invalid details
+16:53:32.393 [main] DEBUG testCases.TC_003_CorporateWellness_InvalidDetails - checking if button is enabled
+16:54:13.144 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - Staring TC_003_CorporateWellness_ValidDetails
+16:54:18.352 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - opening booking page
+16:54:20.706 [main] DEBUG testCases.TC_003_CorporateWellness_ValidDetails - checking if button is enabled
+16:54:31.432 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - checking if thank you modal is working or not
+22:36:21.314 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - Staring TC_003_CorporateWellness_InvalidDetails
+22:36:21.417 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - opening booking page
+22:36:31.448 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - Staring TC_003_CorporateWellness_ValidDetails
+22:47:35.476 [main] INFO  testCases.TC_001_SearchingDentists - Starting TC_001_SearchingDentists
+22:47:35.478 [main] DEBUG testCases.TC_001_SearchingDentists - taking screenshot
+22:47:35.712 [main] INFO  testCases.TC_001_SearchingDentists - searching dentists
+22:47:43.894 [main] INFO  testCases.TC_001_SearchingDentists - filtering results
+22:48:09.970 [main] DEBUG testCases.TC_001_SearchingDentists - taking screenshot
+22:48:10.127 [main] INFO  testCases.TC_001_SearchingDentists - getting number of dentists
+22:48:10.164 [main] INFO  testCases.TC_001_SearchingDentists - getting dentist details
+22:48:21.653 [main] INFO  testCases.TC_002_Surgeries - Starting TC_002_Surgeries
+22:48:21.655 [main] INFO  testCases.TC_002_Surgeries - getting surgeries
+22:48:23.327 [main] DEBUG testCases.TC_002_Surgeries - taking screenshot
+22:48:23.506 [main] INFO  testCases.TC_002_Surgeries - opening surgeries
+22:48:23.888 [main] INFO  testCases.TC_002_Surgeries - recording general surgeries
+22:48:24.033 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+22:48:24.437 [main] INFO  testCases.TC_002_Surgeries - recording orthopedic surgeries
+22:48:24.532 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+22:48:24.950 [main] INFO  testCases.TC_002_Surgeries - recording practology surgeries
+22:48:25.019 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+22:48:25.398 [main] INFO  testCases.TC_002_Surgeries - recording opthomology surgeries
+22:48:25.470 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+22:48:25.825 [main] INFO  testCases.TC_002_Surgeries - recording urology surgeries
+22:48:25.917 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+22:48:26.366 [main] INFO  testCases.TC_002_Surgeries - recording cosmetic surgeries
+22:48:26.452 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+22:48:31.490 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - Staring TC_003_CorporateWellness_InvalidDetails
+22:48:31.490 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - opening booking page
+22:48:33.728 [main] INFO  testCases.TC_003_CorporateWellness_InvalidDetails - putting in invalid details
+22:48:33.998 [main] DEBUG testCases.TC_003_CorporateWellness_InvalidDetails - checking if button is enabled
+22:48:39.422 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - Staring TC_003_CorporateWellness_ValidDetails
+22:48:41.743 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - opening booking page
+22:48:42.295 [main] DEBUG testCases.TC_003_CorporateWellness_ValidDetails - checking if button is enabled
+22:48:52.566 [main] INFO  testCases.TC_003_CorporateWellness_ValidDetails - checking if thank you modal is working or not
+16:08:27.122 [main] INFO  testCases.TC_001_SearchingDentists - Starting TC_001_SearchingDentists
+16:08:27.137 [main] DEBUG testCases.TC_001_SearchingDentists - taking screenshot
+16:08:27.753 [main] INFO  testCases.TC_001_SearchingDentists - searching dentists
+16:08:37.667 [main] INFO  testCases.TC_001_SearchingDentists - filtering results
+16:09:31.752 [main] INFO  testCases.TC_002_Surgeries - Starting TC_002_Surgeries
+16:09:31.752 [main] INFO  testCases.TC_002_Surgeries - getting surgeries
+16:09:34.445 [main] DEBUG testCases.TC_002_Surgeries - taking screenshot
+16:09:34.958 [main] INFO  testCases.TC_002_Surgeries - opening surgeries
+16:09:36.519 [main] INFO  testCases.TC_002_Surgeries - recording general surgeries
+16:09:37.231 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed
+16:09:39.050 [main] INFO  testCases.TC_002_Surgeries - recording orthopedic surgeries
+16:09:39.509 [main] DEBUG testCases.TC_002_Surgeries - checking if surgeries are getting displayed

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class DentistPage extends BasePage{
 
+	//Constructor
 	public DentistPage(WebDriver driver) {
 		super(driver);
 	}
@@ -19,19 +20,25 @@ public class DentistPage extends BasePage{
 	@FindBy(xpath = "//div[@class='c-filter__top']//div[2]")
 	WebElement patientStoriesFilter;
 	
-	@FindBy(xpath = "//div[@class='c-filter__box u-pos-rel c-dropdown open']//ul[@role='listbox']/li[1]/span")
+	@FindBy(xpath = "(//li[@class='c-dropdown__list__item'])[3]")
 	WebElement patientStoriesOptionOne;
 	
 	@FindBy(xpath = "//div[@class='c-filter__top']//div[3]")
 	WebElement experienceFilter;
 	
+	
+	@FindBy(xpath = "//*[@id=\"container\"]/div/div[3]/div/div/header/div[1]/div/div[3]/ul/li[1]/span")
+	WebElement experienceFilterOptionOne;
+	
 	@FindBy(xpath = "//div[@class='u-d-inlineblock u-color--white u-c-pointer']/span")
 	WebElement allFilters;
 	
-	@FindBy(xpath = "//div[@class='o-page-container u-cushion--vertical pure-g']/div[2]//label[2]/div")
+	@FindBy(xpath = "//*[@id=\"container\"]/div/div[3]/div/div/header/div[2]/div/div[2]/div/label[2]/span/span")
 	WebElement aboveRs500;
-	
-	@FindBy(xpath = "//div[@class='o-page-container u-cushion--vertical pure-g']/div[3]//label[3]/div")
+	//////*[@id="container"]/div/div[3]/div/div/header/div[2]/div/div[1]/div/label[2]/span/span
+
+	////*[@id="container"]/div/div[3]/div/div/header/div[2]/div/div[2]/div/label[3]/span/span
+	@FindBy(xpath = "//*[@id=\"container\"]/div/div[3]/div/div/header/div[2]/div/div[3]/div/label[3]/span/span")
 	WebElement availableTomorrow;
 	
 	@FindBy(xpath = "//span[@class='c-sort-dropdown__selected c-dropdown__selected']")
@@ -75,13 +82,17 @@ public class DentistPage extends BasePage{
 	public WebElement getExperienceFilter() {
 		return experienceFilter;
 	}
+	public WebElement getExperienceFilterOptionOne() {
+		return experienceFilterOptionOne;
+	}
+	
 	public WebElement getAllFilters() {
 		return allFilters;
 	}
 	public WebElement getAboveRs500() {
 		return aboveRs500;
 	}
-	public WebElement getAvailableToday() {
+	public WebElement getAvailableTomorrow() {
 		return availableTomorrow;
 	}
 	public WebElement getRelevanceFilter() {

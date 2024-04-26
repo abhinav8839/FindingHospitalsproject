@@ -17,6 +17,9 @@ public class HomePage extends BasePage {
 	By typeSearchBox = By.xpath(
 			"//div[@class='c-omni__wrapper u-clearfix c-omni__wrapper--keyword']//div[@class='c-omni-searchbox_wrapper ']/input");
 	
+	@FindBy(xpath= "//div[text()=\"Bangalore\"]")
+	WebElement locClick;
+	
 	@FindBy(xpath = "//div[@class='c-omni-suggestion-list']/div[1]/div[1]/span[1]")
 	WebElement dentistType;
 	
@@ -35,6 +38,10 @@ public class HomePage extends BasePage {
 	
 	public WebElement setTypeSearchBox() {
 		return driver.findElement(typeSearchBox);
+	}
+	
+	public WebElement setLocClick() {
+		return locClick;
 	}
 	
 	public WebElement setDentistType() {

@@ -1,7 +1,6 @@
 package testBase;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
@@ -26,85 +25,83 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 	public static WebDriver driver;
-	public Logger logger;
-	public Properties prop;
+	public static Logger logger;
+	public static Properties prop;
 
 	@BeforeClass
 	@Parameters({ "browser", "os" })
 	public void setup(String browser, String os) throws IOException {
 		// setting properties
 		prop = new Properties();
-//		FileInputStream file = new FileInputStream(
-//				"C:\\Users\\2303507\\eclipse-workspace\\FindingHospitalsHackathonProject 1\\FindingHospitalsHackathonProject\\src\\test\\resources\\config.properties");
 		FileReader file = new FileReader(".\\src\\test\\resources\\config.properties");
 		
 		prop.load(file);
+		
 		ChromeOptions chromeoption=new ChromeOptions();
 		chromeoption.addArguments("--disable-notifications");
+		EdgeOptions edgeoption=new EdgeOptions();
+		edgeoption.addArguments("--disable-notifications");
 		
 		// Loading log4j file
 		logger = LogManager.getLogger(this.getClass());
  
-		EdgeOptions edgeoption=new EdgeOptions();
-		edgeoption.addArguments("--disable-notifications");
-				
-		if(prop.getProperty("execution_env").equalsIgnoreCase("remote"))
-			 	{	
-				DesiredCapabilities capabilities=new DesiredCapabilities();
-				//os
-				if(os.equalsIgnoreCase("windows"))
-				{
-					capabilities.setPlatform(Platform.WIN11);
-				}
-				else if(os.equalsIgnoreCase("mac"))
-				{
-					capabilities.setPlatform(Platform.MAC);
-				}
-				else
-				{
-					System.out.println("No matching os..");
-					return;
-				}
-				//browser
-				switch(browser.toLowerCase())
-				{
-				case "chrome" : capabilities.setBrowserName("chrome"); break;
-				case "edge" : capabilities.setBrowserName("MicrosoftEdge"); break;
-				default: System.out.println("No matching browser.."); return;
-				}
-				driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
-			    }
-		 
-			    //If execution_env is local then run in local system
-				else if(prop.getProperty("execution_env").equalsIgnoreCase("local"))
-				{
-					//launching browser based on condition - locally
-					switch(browser.toLowerCase())
-					{
-					case "chrome": driver=new ChromeDriver(chromeoption); break;
-					case "edge": driver=new EdgeDriver(edgeoption); break;
-					default: System.out.println("No matching browser..");
-								return;
-					}
-				}
-
-		// setting webDriver
-//		if (browser.equalsIgnoreCase("chrome"))
-//			driver = new ChromeDriver();
-//		else if (browser.equalsIgnoreCase("edge"))
-//			driver = new EdgeDriver();
-//		else
-//			System.out.println("Invalid browser name");
+		if(prop.getProperty("execution_env").equalsIgnoreCase("remote")){	
+			DesiredCapabilities capabilities=new DesiredCapabilities();
+			
+			//os
+			if(os.equalsIgnoreCase("windows")){
+				capabilities.setPlatform(Platform.WIN11);
+			}else if(os.equalsIgnoreCase("mac")){
+				capabilities.setPlatform(Platform.MAC);
+			}else{
+				System.out.println("No matching os..");
+				return;
+			}
+			
+			//browser
+			switch(browser.toLowerCase()){
+			case "chrome" : capabilities.setBrowserName("chrome"); break;
+			case "edge" : capabilities.setBrowserName("MicrosoftEdge"); break;
+			default: System.out.println("No matching browser.."); return;
+			}
+			
+			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities);
+	    }
+			 
+		//If execution_env is local then run in local system
+		else if(prop.getProperty("execution_env").equalsIgnoreCase("local"))
+		{
+			//launching browser based on condition - locally
+			switch(browser.toLowerCase()){
+			case "chrome": driver=new ChromeDriver(chromeoption); break;
+			case "edge": driver=new EdgeDriver(edgeoption); break;
+			default: System.out.println("No matching browser..");
+						return;
+			}
+		}
 
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get(prop.getProperty("url"));
 	}
 
 	@AfterClass
-	public void tearDown() {
+	public void tearDown(){
 		driver.quit();
 		driver = null;
+	}
+	
+	public static WebDriver initializeDriver() throws IOException {
+		ChromeOptions chromeoption=new ChromeOptions();
+		chromeoption.addArguments("--disable-notifications");
+		driver=new ChromeDriver(chromeoption);
+		
+		prop = new Properties();
+		FileReader file = new FileReader(".\\src\\test\\resources\\config.properties");
+		
+		prop.load(file);
+		
+		return driver;
 	}
 	
 	public void takeSnapshot(WebDriver driver, String photoName) throws IOException {
@@ -115,8 +112,6 @@ public class BaseClass {
 	}
 
 	public static String captureScreen(String name) {
-//		String timeStamp = new SimpleDateFormat().format(new Date());
-		
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		
@@ -125,5 +120,13 @@ public class BaseClass {
 		
 		src.renameTo(trg);
 		return targetPath;
+	}
+	
+	public static WebDriver getDriver() {
+		return driver;
+	}
+	
+	public static Properties getProperties() throws IOException{
+		return prop;
 	}
 }
